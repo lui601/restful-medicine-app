@@ -1,0 +1,45 @@
+.physicians-wrapper {
+  max-width: 400px;
+  margin: 10% auto;
+  padding: 20px;
+  margin-top: 6px;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+}
+
+.physicians-wrapper h1 {
+  text-align: center;
+  color: #2980b9;
+  text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.9);
+}
+
+.physician-profile-wrapper {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.physician-profile-wrapper h1 {
+  font-size: 24px;
+  color: #3498db;
+}
+
+.physician-profile-wrapper div {
+  margin-top: 20px;
+}
+
+.physician-profile-wrapper p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.physician-profile-wrapper strong {
+  font-size: 20px;
+  color: #3498db;
+}

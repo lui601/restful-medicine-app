@@ -1,0 +1,19 @@
+version: "3.6"
+    
+services:
+  mysqldb:
+    container_name: mysqldb
+    image: mysql:latest
+    environment:
+      MYSQL_USER: l
+      MYSQL_PASSWORD: l
+      MYSQL_ROOT_PASSWORD: l
+    ports:
+      - 3306:3306
+      
+  mongodb:
+    container_name: mongodb
+    restart: always
+    image: mongo:latest
+    ports:
+      - 27017:27017

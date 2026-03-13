@@ -1,0 +1,5 @@
+/home/l/Documents/account-service-grpc/src/main/generated/pl/piomin/services/grpc/account/model/AccountsServiceGrpc.java
+/home/l/Documents/account-service-grpc/src/main/java/pl/piomin/services/grpc/account/service/AccountsService.java
+/home/l/Documents/account-service-grpc/src/main/generated/pl/piomin/services/grpc/account/model/AccountProto.java
+/home/l/Documents/account-service-grpc/src/main/java/pl/piomin/services/grpc/account/AccountApplication.java
+/home/l/Documents/account-service-grpc/src/main/java/pl/piomin/services/grpc/account/repository/AccountRepository.java

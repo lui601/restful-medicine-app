@@ -1,0 +1,98 @@
+syntax = "proto3";
+
+package model;
+
+option java_package = "com.example.model";
+option java_outer_classname = "IdmProto";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/wrappers.proto";
+
+service IdmService {
+  rpc CreatePatient(CreateUserRequest) returns (UserResponse) {}
+  rpc CreatePhysician(CreateUserRequest) returns (UserResponse) {}
+  rpc UpdateInfo(UpdateInfoRequest) returns (UserResponse) {}
+  rpc SetRole(SetRoleRequest) returns (UserResponse) {}
+  rpc GetRoles(GetRolesRequest) returns (RolesResponse) {}
+  rpc GetUser(GetUserRequest) returns (UserResponse) {}
+  rpc GetUsers(GetUsersRequest) returns (UsersResponse) {}
+  rpc Login(LoginRequest) returns (LoginResponse) {}
+  rpc Logout(LogoutRequest) returns (google.protobuf.Empty) {}
+  rpc Authorize(AuthorizeRequest) returns (UserResponse) {}
+  rpc DeletePhysician(DeletePhysicianRequest) returns (google.protobuf.Empty) {}
+}
+
+message CreateUserRequest {
+    string username = 1;
+    string password = 2;
+    string token = 3;
+}
+
+message UpdateInfoRequest {
+    int32 user_id = 1;
+    string token = 2;
+    string password = 3;
+    string username = 4;
+}
+
+message SetRoleRequest {
+    int32 user_id = 1;
+    int32 role_id = 2;
+    string token = 3;
+}
+
+message GetUserRequest {
+    int32 user_id = 1;
+    string token = 2;
+}
+
+message GetUsersRequest {
+    string token = 1;
+}
+
+message LoginRequest {
+    string username = 1;
+    string password = 2;
+}
+
+message LogoutRequest {
+    string token = 1;
+}
+
+message AuthorizeRequest {
+    string token = 1;
+}
+
+message UserResponse {
+    int32 user_id = 1;
+    int32 role_id = 2;
+    string username = 3;
+}
+
+message UsersResponse {
+    repeated UserResponse user = 1;
+}
+
+message LoginResponse {
+    int32 user_id = 1;
+    string token = 2;
+    int32 role_id = 3;
+}
+
+message GetRolesRequest {
+    string token = 1;
+}
+
+message RoleResponse {
+    int32 role_id = 1;
+    string role_name = 2;
+}
+
+message RolesResponse {
+     repeated RoleResponse role = 1;
+}
+
+message DeletePhysicianRequest {
+    int32 user_id = 1;
+     string token = 2;
+}

@@ -1,0 +1,61 @@
+.appointments-wrapper {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #3498db;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  
+  .Card {
+    margin-bottom: 20px;
+  }
+  
+  .Dialog {
+    width: 50vw;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #3498db;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  strong {
+    color: #3498db;
+  }
+  
+  p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  Button {
+    margin-top: 10px;
+    margin-left: 5px;
+    height: 35px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .Card {
+    margin-bottom: 20px;
+  }

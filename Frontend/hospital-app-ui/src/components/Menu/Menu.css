@@ -1,0 +1,30 @@
+.menu {
+  background-color: #3498db;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.p-menuitem.active > .p-menuitem-link {
+  background-color: #022841;
+}
+
+.p-menuitem-link {
+  color: #fff;
+}
+
+.p-menuitem-link i {
+  margin-right: 8px;
+}
+
+.p-menuitem-link:hover {
+  background-color: #297fb8;
+}
+
+.p-menuitem-link.logout-menu {
+  color: #022841;
+}
+
+.p-menuitem-link.logout-menu:hover {
+  background-color: #081823;
+}

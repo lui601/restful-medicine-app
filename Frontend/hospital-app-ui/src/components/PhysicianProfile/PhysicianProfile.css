@@ -1,0 +1,29 @@
+.physician-profile-wrapper {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center; 
+    background-color: #f4f4f4;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .physician-profile-wrapper h1 {
+    font-size: 24px; 
+    color: #3498db; 
+  }
+  
+  .physician-profile-wrapper div {
+    margin-top: 20px;
+  }
+  
+  .physician-profile-wrapper p {
+    margin: 10px 0;
+    font-size: 18px; 
+    color: #333; 
+  }
+  
+  .physician-profile-wrapper strong {
+    font-size: 20px;
+    color: #3498db; 
+  }
+  
